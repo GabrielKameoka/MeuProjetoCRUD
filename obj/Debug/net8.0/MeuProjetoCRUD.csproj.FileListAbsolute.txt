@@ -135,3 +135,4 @@ C:\dev\MeuProjetoCRUD\obj\Debug\net8.0\refint\MeuProjetoCRUD.dll
 C:\dev\MeuProjetoCRUD\obj\Debug\net8.0\MeuProjetoCRUD.pdb
 C:\dev\MeuProjetoCRUD\obj\Debug\net8.0\MeuProjetoCRUD.genruntimeconfig.cache
 C:\dev\MeuProjetoCRUD\obj\Debug\net8.0\ref\MeuProjetoCRUD.dll
+C:\dev\MeuProjetoCRUD\obj\Debug\net8.0\MeuProjetoCRUD.sourcelink.json

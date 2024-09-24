@@ -9,11 +9,18 @@ namespace MeuProjetoCRUD.Context
 {
     public class UsuarioContext : DbContext
     {
-        public UsuarioContext(DbContextOptions<UsuarioContext> options) : base(options)
-        {
+        private readonly IConfiguration _configuration;
 
+        public UsuarioContext(DbContextOptions<UsuarioContext> options, IConfiguration configuration) : base(options)
+        {
+            _configuration = configuration;
         }
 
         public DbSet<Contato> Contatos { get; set; }
+
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            optionsBuilder.UseSqlServer(_configuration.GetConnectionString("ConexaoPadrao"));
+        }
     }
 }
